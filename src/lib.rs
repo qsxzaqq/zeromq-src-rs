@@ -291,6 +291,7 @@ impl Build {
         build.define("ZMQ_STATIC", "1");
         build.define("ZMQ_USE_BUILTIN_SHA1", "1");
 
+        build.include(Path::new(env!("CARGO_MANIFEST_DIR")).join("include_pgm"))
         println!("cargo:rustc-link-lib=libpgm-v143-mt-gd-5_2_127");
         build.define("ZMQ_HAVE_OPENPGM", "1");
 
@@ -362,8 +363,6 @@ impl Build {
                 // Fix warning C4530: "C++ exception handler used, but unwind
                 // semantics are not enabled. Specify /EHsc"
                 build.flag("/EHsc");
-                
-                build.flag("/utf-8");
             } else {
                 create_platform_hpp_shim(&mut build);
                 build.define("HAVE_STRNLEN", "1");
