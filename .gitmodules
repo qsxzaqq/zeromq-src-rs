@@ -1,4 +1,8 @@
 [submodule "vendor"]
 	path = vendor
 	url = https://github.com/zeromq/libzmq
-    branch = v4.3.4
+	branch = v4.3.4
+[submodule "openpgm"]
+	path = openpgm
+	url = https://github.com/steve-o/openpgm
+	branch = release-5-3-128
