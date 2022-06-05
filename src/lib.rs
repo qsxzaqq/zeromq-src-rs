@@ -264,12 +264,12 @@ impl Build {
                 "vmci_connecter",
                 "vmci_listener",
                 "vmci",
-                "ws_address",
-                "ws_connecter",
-                "ws_decoder",
-                "ws_encoder",
-                "ws_engine",
-                "ws_listener",
+               // "ws_address",
+               // "ws_connecter",
+               // "ws_decoder",
+               // "ws_encoder",
+               // "ws_engine",
+               // "ws_listener",
                 // "wss_address", // requires gnutls
                 // "wss_engine", // requires gnutls
                 "xpub",
