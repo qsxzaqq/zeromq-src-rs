@@ -291,7 +291,7 @@ impl Build {
         build.define("ZMQ_STATIC", "1");
         build.define("ZMQ_USE_BUILTIN_SHA1", "1");
 
-        build.include(Path::new(env!("CARGO_MANIFEST_DIR")).join("openpgm").join("openpgm").join("pgm").join("include"))
+        build.include(Path::new(env!("CARGO_MANIFEST_DIR")).join("openpgm").join("openpgm").join("pgm").join("include"));
         println!("cargo:rustc-link-lib=libpgm-v143-mt-gd-5_2_127");
         build.define("ZMQ_HAVE_OPENPGM", "1");
 
