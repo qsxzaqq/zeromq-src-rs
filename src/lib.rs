@@ -291,7 +291,7 @@ impl Build {
         build.define("ZMQ_STATIC", "1");
         build.define("ZMQ_USE_BUILTIN_SHA1", "1");
 
-        println!("cargo:rustc-link-lib=pgm");
+        println!("cargo:rustc-link-lib=libpgm-v110-mt-gd-5_2_122");
         build.define("ZMQ_HAVE_OPENPGM", "1");
 
         let target = env::var("TARGET").unwrap();
