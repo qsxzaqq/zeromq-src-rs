@@ -5,4 +5,3 @@
 [submodule "openpgm"]
 	path = openpgm
 	url = https://github.com/steve-o/openpgm
-	branch = release-5-3-128
