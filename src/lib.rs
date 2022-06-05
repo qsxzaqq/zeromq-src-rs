@@ -368,7 +368,7 @@ impl Build {
 
             if !target.contains("uwp") {
                 build.define("ZMQ_HAVE_IPC", "1");
-                build.define("ZMQ_HAVE_OPENPGM", "1");
+                build.define("WITH_OPENPGM", "1");
             }
         } else if target.contains("linux") {
             create_platform_hpp_shim(&mut build);
