@@ -362,6 +362,8 @@ impl Build {
                 // Fix warning C4530: "C++ exception handler used, but unwind
                 // semantics are not enabled. Specify /EHsc"
                 build.flag("/EHsc");
+                
+                build.flag("/utf-8");
             } else {
                 create_platform_hpp_shim(&mut build);
                 build.define("HAVE_STRNLEN", "1");
